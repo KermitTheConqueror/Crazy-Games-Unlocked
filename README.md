@@ -45,3 +45,6 @@ Captured data stays in local extension IndexedDB until the next collection or ex
 ## Verification
 
 Run `node --test tests/*.test.cjs` for URL validation, filename handling, binary ZIP integrity and mocked collector lifecycle checks. Live game playback remains unverified in this environment.
+
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/870b999b-09d6-4252-b964-09b03e3a054f" />
+
