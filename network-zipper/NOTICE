@@ -1,0 +1,24 @@
+My Network Zipper — CrazyGames
+Based on the network capture / ZIP export workflow of genizy/network-zipper:
+https://github.com/genizy/network-zipper
+Original project licensed under Apache License 2.0 (included in LICENSE).
+
+This custom version replaces the manifest, background collector, and panel UI
+with a CrazyGames-only launcher and automatic response capture. Modified
+November 2026. It retains the upstream bundled lib/jszip.js without changes;
+that library's original license notices are included in its source header.
+No affiliation with CrazyGames or the original project's author is implied.
+
+Version 1.0.1: added a rounded, draggable in-tab panel activated by the toolbar
+button, retaining the version 1.0.0 collection and ZIP export workflow.
+
+Version 1.0.2: added CrazyGames homepage support and purple on-page warnings
+on other websites, with a toolbar fallback for browser-protected pages.
+
+Version 1.0.4: five-second warning, same-tab game navigation, and transparent
+top-left feed of successfully collected files.
+
+Version 1.0.5: user-supplied icon artwork, purple-and-green panel redesign,
+and per-tab panel state/position restoration across game navigation.
+
+Version 1.0.6: direct ZIP downloads without new tabs and Refresh files control.
