@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "CrazyGames Unlocked",
+  "version": "1.0.14",
+  "minimum_chrome_version": "125",
+  "description": "Open a CrazyGames game's iframe URL and automatically collect its loaded files into a ZIP.",
+  "permissions": ["activeTab", "tabs", "debugger", "storage", "scripting", "offscreen", "downloads"],
+  "background": {"service_worker": "background.js"},
+  "icons": {"16":"icons/icon.png","32":"icons/icon.png","48":"icons/icon.png","128":"icons/icon.png"},
+  "web_accessible_resources": [{"resources":["icons/icon.png"],"matches":["https://*.crazygames.com/*","https://crazygames.com/*"]}],
+  "content_scripts": [{"matches": ["https://games.crazygames.com/*", "https://www.crazygames.com/*", "https://crazygames.com/*"], "js": ["core.js", "floating.js", "panel-restore.js", "file-feed.js"], "run_at": "document_idle"}],
+  "action": {"default_title": "Open floating CrazyGames Unlocked", "default_icon":{"16":"icons/icon.png","32":"icons/icon.png","48":"icons/icon.png","128":"icons/icon.png"}}
+}
